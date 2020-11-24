@@ -14,10 +14,10 @@ from planta import Planta
 
 class Jardin(object):
 
-    def __init__(self, radio, plantas=[]):
+    def __init__(self, radio, plantas=[]):#He puesto [] en lugar de None porque es muchoo más simple
 
         self.radio = radio
-        self.plantas = plantas#vector plantas[0,1,2,3]
+        self.plantas = plantas
         
 
     def intenta_plantar(self, pl):
@@ -46,8 +46,7 @@ class Jardin(object):
 
                     
             
-        #true si lo consigue y añadirla: comprobar que esta dentro del radio, comprobar 
-        #false si no
+        #true si lo consigue y añadirla: comprobar que esta dentro del radio, comprobar #false si no
 
 
 
