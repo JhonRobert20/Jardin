@@ -18,9 +18,9 @@ if __name__ == "__main__":
 
     jardin = Jardin(radio=10)  # Creo el jardin
     jardin.intenta_plantar(Planta(pos=np.array([-3.254, 6.25]), color=np.array([1.0, 0.0, 0.0]), radio_exclusion=0.48, radio_alcance=1.39))
-    jardin.intenta_plantar(Planta(pos=np.array([7.812, 2.25]), color=np.array([0.0, 1.0, 0.0]), radio_exclusion=0.60, radio_alcance=1.16))
+    jardin.intenta_plantar(Planta(pos=np.array([-3.3, 6]), color=np.array([0.0, 1.0, 0.0]), radio_exclusion=0.60, radio_alcance=1.16))
     jardin.intenta_plantar(Planta(pos=np.array([-2.98, -8.25]), color=np.array([0.0, 0.0, 1.0]), radio_exclusion=0.52, radio_alcance=1.28))
-    jardin.crecimiento_total()  
+    jardin.crecimiento_total(0)  
 
     jardin.mapa_aereo("hola.jpg")
 

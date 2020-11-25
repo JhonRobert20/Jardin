@@ -28,7 +28,7 @@ class Jardin(object):
 
         longitud = len(self.plantas)
         #Si solo pongo el radio no tiene sentido, porque estaria teniendo plantas con radio_alcanze fuera del jardin, quitar pl.radio_alcance si igualmente podemos
-        if x > self.radio - pl.radio_alcance or x < -self.radio + pl.radio_alcance or y > self.radio - pl.radio_alcance or y < -self.radio + pl.radio_alcance:#Si se encuentra entre esto
+        if x > self.radio or x < -self.radio  or y > self.radio  or y < -self.radio:#Si se encuentra entre esto
             apta = False 
             return apta
         else: 
